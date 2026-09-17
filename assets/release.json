@@ -1,0 +1,100 @@
+{
+  "contract": {
+    "result_list_field": "saved_images",
+    "validated_field": "validated"
+  },
+  "defaults": {
+    "search_query": "Mad Max: Fury Road"
+  },
+  "device": "default",
+  "input_contract": [
+    {
+      "default": "Mad Max: Fury Road",
+      "description": "在 FILMGRAB 网站上搜索影片名称的关键词",
+      "display_name": "影片搜索关键词",
+      "name": "search_query",
+      "required": false,
+      "type": "string"
+    }
+  ],
+  "interaction": {
+    "completion_behavior": "cleanup",
+    "debugger": true,
+    "foreground_policy": "never_steal",
+    "mode": "background",
+    "page_activation_emulation": true
+  },
+  "kind": "rpa-dev-local-production-skill",
+  "minimum_local_protocol": 3,
+  "release": {
+    "identity_version": 2,
+    "interaction": {
+      "completion_behavior": "cleanup",
+      "debugger": true,
+      "foreground_policy": "never_steal",
+      "mode": "background",
+      "page_activation_emulation": true
+    },
+    "kind": "rpa-dev-local-release",
+    "minimum_local_protocol": 3,
+    "name": "浏览器自动化任务",
+    "prd_sha256": "60eb689a051d07b659e1e55e737ec3d6017227d94995194d29cb60938d296115",
+    "prd_version": 4,
+    "promoted_at": 1789443318,
+    "release_id": "local-b3c9afb213573a14c3c3",
+    "required_capabilities": [
+      "workspace_lease_v2",
+      "popup_adoption",
+      "workspace_cleanup",
+      "local_debug_v2",
+      "deep_selectors",
+      "debug_events",
+      "downloads_uploads",
+      "human_in_loop",
+      "background_handoff",
+      "runtime_self_heal",
+      "background_audio_suppression",
+      "background_focus_isolation_v1",
+      "multi_workspace_v1",
+      "trusted_input_v1",
+      "trusted_input_v2",
+      "trusted_keyboard_v1",
+      "trusted_form_submit_v1",
+      "semantic_locator_v1",
+      "dev_probe_v1",
+      "trace_dom_v1"
+    ],
+    "runner": "runner.js",
+    "runner_sha256": "23db79b6e9a79507d8d1748295b4d5e901ca015470381f99f6f811cda1d1682b",
+    "runtime_protocol": "local-chrome-v2",
+    "schema": 1,
+    "side_effect_confirmation": "disabled",
+    "side_effects": []
+  },
+  "required_capabilities": [
+    "workspace_lease_v2",
+    "popup_adoption",
+    "workspace_cleanup",
+    "local_debug_v2",
+    "deep_selectors",
+    "debug_events",
+    "downloads_uploads",
+    "human_in_loop",
+    "background_handoff",
+    "runtime_self_heal",
+    "background_audio_suppression",
+    "background_focus_isolation_v1",
+    "multi_workspace_v1",
+    "trusted_input_v1",
+    "trusted_input_v2",
+    "trusted_keyboard_v1",
+    "trusted_form_submit_v1",
+    "semantic_locator_v1",
+    "dev_probe_v1",
+    "trace_dom_v1"
+  ],
+  "schema": 1,
+  "side_effect_confirmation": "disabled",
+  "side_effects": [],
+  "skill_name": "filmgrab-stills"
+}
